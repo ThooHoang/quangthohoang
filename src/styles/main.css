@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth ;
+    font-size: 16px;
+
+}
+
+body {
+    background: var(--section-bg);
+}
+
+ul,ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+:root {
+
+    --accent-color: #FFF3C3;
+    --white-75: rgba(255, 255, 255, 0.75);
+    --foreground: #FFFFFF;
+    --gray: #666666;
+    --section-bg: #1D1D1D;
+    --black: #000000;
+    
+
+    --primary-gradient: linear-gradient(134deg, #000000 0%, #666666 100%);
+    
+
+    --font-primary: 'Inter', sans-serif;
+    --font-secondary: 'Oswald', sans-serif;
+}
+
+
+.container {
+    padding-inline: 4rem; 
+}
+
+
+@import url(./hero.css);
+@import url(./text-animation.css);
+@import url(./about.css);
+@import url(./how-i-create.css);
+@import url(./selected-works.css);
+@import url(./footer.css);
