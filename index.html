@@ -5,9 +5,57 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Quang Tho Hoang | Frontend Developer </title>
   </head>
   <body>
-    <script type="module" src="/src/main.js"></script>
+    <header class="container">
+      <!-- Navbar -->
+
+      <nav class="navbar" id="navbar">
+        <div class="navbar-container">
+          <div class="logo">
+            <a href="#navbar">
+              <img src="./src/assets/logo.png" alt="Quang Tho Hoang Logo">
+            </a>
+          </div>
+          <div class="time">
+            <p>AARHUS, DK <span id="time" class="time"></span></p>
+          </div>
+          <div class="menu">
+            <span class="line"></span>
+            <span class="line"></span>
+          </div>
+        </div>
+        <div class="menu-links">
+          <button class="close-btn">
+            <i class="fas fa-times"></i>
+          </button>
+          <ul>
+            <a href="#about">
+              <li>[ABOUT]</li>
+            </a>
+            <a href="#how-i-create ">
+              <li>[HOW I CREATE]</li>
+            </a>
+            <a href="#selected-works">
+              <li>[PROJECTS]</li>
+            </a>
+            <a href="#contact">
+              <li>[CONTACT]</li>
+            </a>
+          </ul>
+        </div>
+      </nav>
+
+
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="hero-container">
+          <img src="./src/assets/hero-avatar.png" alt="">
+        </div>
+      </section>
+    </header>
+    <script type="module" src="/src/script/main.js"></script>
   </body>
 </html>

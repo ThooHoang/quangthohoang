@@ -1,3 +1,12 @@
+@import url(./hero.css);
+@import url(./text-animation.css);
+@import url(./about.css);
+@import url(./how-i-create.css);
+@import url(./selected-works.css);
+@import url(./footer.css);
+@import url(./header.css);
+
+
 * {
     margin: 0;
     padding: 0;
@@ -7,6 +16,7 @@
 html {
     scroll-behavior: smooth ;
     font-size: 16px;
+    overflow-x: hidden;
 
 }
 
@@ -36,6 +46,8 @@ img {
 }
 
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&display=swap');
+
 :root {
 
     --accent-color: #FFF3C3;
@@ -57,11 +69,3 @@ img {
 .container {
     padding-inline: 4rem; 
 }
-
-
-@import url(./hero.css);
-@import url(./text-animation.css);
-@import url(./about.css);
-@import url(./how-i-create.css);
-@import url(./selected-works.css);
-@import url(./footer.css);
