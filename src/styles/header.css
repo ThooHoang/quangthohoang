@@ -58,6 +58,7 @@ header {
 .time {
     color: white;
     font-family: var(--font-primary);
+    font-weight: 500;
 }
 
 .menu-links {
