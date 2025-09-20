@@ -17,12 +17,27 @@
 }
 
 header {
-    background-image: url(../assets/noise-bg.png);
-    height: 100%;
+    height: 100vh;
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
     background: var(--primary-gradient);
+    position: relative;
+    overflow: hidden;
+}
+
+
+header::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: 1;
+    background: url('../assets/noise-bg.png');
+    opacity: .9; 
+    mix-blend-mode: overlay; 
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 
@@ -30,8 +45,9 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-block: 2.5rem;
+    padding-top: 2.5rem;
     position: relative;
+  
 }
 
 .line {
@@ -53,6 +69,7 @@ header {
     align-items: center;
     gap: 12px;
     cursor: pointer;
+    z-index: 99;
 }
 
 .time {
@@ -78,6 +95,7 @@ header {
     font-size: 2.5rem;
     transform: translateX(100%);
     transition: transform .3s ease;
+       z-index: 99;
 }
 
 .menu-links.active {
@@ -140,7 +158,7 @@ header {
     }
 
      .navbar-container {
-        padding-block: 1.5rem; /* Smaller navbar height */
+        padding-block: 1.5rem; 
     }
     .menu {
         height: 50px; /* Smaller hamburger */
