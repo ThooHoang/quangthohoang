@@ -1,4 +1,3 @@
-
 // Real Time Logic 
 
 setInterval(updateTime,1000);
@@ -82,4 +81,55 @@ quoteBtn.addEventListener('click', function() {
   } else {
     heroQuote.style.display = "none";
   }
+});
+
+// Text Animation
+document.addEventListener('DOMContentLoaded', function() {
+  const textEl = document.getElementById('text');
+  if (!textEl) return;
+
+  const highlightWords = ['inspire', 'connect'];
+  const text = textEl.textContent;
+  textEl.textContent = '';
+
+  let i = 0;
+  while (i < text.length) {
+    let matched = false;
+    for (const word of highlightWords) {
+      if (text.slice(i, i + word.length) === word) {
+        for (let j = 0; j < word.length; j++) {
+          const span = document.createElement('span');
+          span.textContent = word[j];
+          span.classList.add('highlight');
+          textEl.appendChild(span);
+        }
+        i += word.length;
+        matched = true;
+        break;
+      }
+    }
+    if (!matched) {
+      const span = document.createElement('span');
+      span.textContent = text[i];
+      textEl.appendChild(span);
+      i++;
+    }
+  }
+
+  const spans = textEl.querySelectorAll('span');
+
+  window.addEventListener('scroll', () => {
+    const rect = textEl.getBoundingClientRect();
+    const windowHeight = window.innerHeight;
+    const visible = Math.max(0, Math.min(1, (windowHeight - rect.top) / (windowHeight + rect.height)));
+    const progress = visible * spans.length * 1.2;
+
+    spans.forEach((span, idx) => {
+      if (idx < progress) {
+        span.style.opacity = 1;
+      } else {
+        span.style.opacity = 0.3;
+      }
+    });
+  });
 });

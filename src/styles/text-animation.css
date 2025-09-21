@@ -1,0 +1,59 @@
+.text-animation {
+    display: flex;
+    margin-block: 300px;
+    height: 100vh;
+}
+
+.text-animation-container {
+    max-width: 90%;
+}
+
+.highlight {
+    color: #FFEDA4;
+}
+
+.fade-scroll {
+    font-size: 6rem;
+    color: var(--foreground);
+    font-family: var(--font-primary);
+}
+
+.fade-scroll span {
+    opacity: 0.3;
+    transition: opacity 0.2s linear;
+
+}
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+    .fade-scroll {
+        font-size: 4rem;
+    }
+    .text-animation {
+        margin-block: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    .fade-scroll {
+        font-size: 2.2rem;
+    }
+    .text-animation {
+        margin-block: 100px;
+        height: auto;
+    }
+    .text-animation-container {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .fade-scroll {
+        font-size: 1.2rem;
+    }
+    .text-animation {
+        margin-block: 40px;
+        height: auto;
+    }
+}
+
