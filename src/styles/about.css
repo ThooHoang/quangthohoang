@@ -1,9 +1,10 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 
 .about-me-container {
     display: flex;
+    gap: 1rem;
+    justify-content: center;
 }
 
 .about-me-image {
@@ -33,3 +34,54 @@
     font-weight: 200;
     font-size: 1.5rem;
 }
+
+@media (max-width: 1024px) {
+
+  .about-me-container {
+    gap: 2rem;
+  }
+
+  .about-me-text h1 {
+    font-size: 2.5rem;
+  }
+  .about-me-text p {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-me-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+  .about-me-image,
+  .about-me-text {
+    flex: unset;
+    width: 100%;
+    max-width: 500px;
+  }
+  .about-me-text h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .about-me-text p {
+    font-size: 1rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-me-text h1 {
+    font-size: 1.3rem;
+    line-height: 1.1;
+  }
+  .about-me-text p {
+    font-size: 0.9rem;
+  }
+  .about-me-container {
+    gap: 1rem;
+  }
+}
+
+
