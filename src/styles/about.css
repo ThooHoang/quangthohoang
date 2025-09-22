@@ -1,0 +1,35 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+.about-me-container {
+    display: flex;
+}
+
+.about-me-image {
+    flex: 1;
+}
+
+.about-me-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+
+.about-me-text h1 {
+    font-size: 3.5rem;
+    color: var(--foreground);
+    font-family: 'Oswald', sans-serif;
+    line-height: 87%;
+    font-weight:700;
+}
+
+
+.about-me-text p {
+    color: var(--foreground);
+    font-family: 'Inter', sans-serif;
+    font-weight: 200;
+    font-size: 1.5rem;
+}
