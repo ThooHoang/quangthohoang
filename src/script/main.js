@@ -88,7 +88,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const textEl = document.getElementById('text');
   if (!textEl) return;
 
-  const highlightWords = ['inspire', 'connect'];
+  const highlightWords = ['learning', 'curious'];
   const text = textEl.textContent;
   textEl.textContent = '';
 
