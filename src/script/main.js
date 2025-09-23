@@ -1,12 +1,12 @@
 // Real Time Logic 
 
-setInterval(updateTime,1000);
+// setInterval(updateTime,1000);
 
-function updateTime () {
-    const timeElement = document.getElementById('time');
-    const currentTime = new Date();
-    timeElement.innerHTML = currentTime.toLocaleTimeString();
-}
+// function updateTime () {
+//     const timeElement = document.getElementById('time');
+//     const currentTime = new Date();
+//     timeElement.innerHTML = currentTime.toLocaleTimeString();
+// }
 
 
 // Hamburger Menu Logic

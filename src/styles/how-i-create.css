@@ -1,0 +1,183 @@
+.how-i-create {
+    margin-block: 15rem;
+}
+
+.how-i-create-container {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+
+.how-i-create-text {
+    display: flex;
+    justify-content: space-between;
+}
+
+.how-i-create-text h1 {
+    color: var(--foreground);
+    font-family: var(--font-secondary);
+    font-weight: 900;
+    font-size: 4rem;
+    width: 80%;
+    line-height: 87%;
+}
+
+.how-i-create-text p {
+    color: var(--foreground);
+    font-family: var(--font-primary);
+    font-weight: 300;
+    align-self: flex-end;
+}
+
+.how-i-create-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.how-i-create h3 {
+    color: var(--foreground);
+    font-family: var(--font-secondary);
+    font-weight: 700;
+    
+}
+
+
+.how-i-create-cards {
+    display: flex;
+    width: 100vw;
+    max-width: 100vw;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+
+.how-i-create-cards .card {
+    border: .5px solid #666666;
+    flex: 1;
+    color: var(--foreground);
+    padding: 3rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 2rem;
+}
+
+
+.how-i-create-cards .card:hover {
+    background-color: #FFF3C3;
+    color: #000000;
+    transition: .3s ease;
+}
+
+
+.how-i-create-cards .card .card-text {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.card-circles {
+    display: flex;
+    gap: .5rem;
+}
+
+.card-circles i.inactive {
+    color: #666666;
+}
+
+.how-i-create-cards .card .card-text h4{
+    font-family: var(--font-secondary);
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.card-text p {
+    font-family: var(--font-primary);
+    color: #8D8D8D;
+    font-weight: 400;
+}
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+    .how-i-create-text h1 {
+        font-size: 3rem;
+        width: 90%;
+    }
+    .how-i-create-cards .card {
+        padding: 2rem 1rem;
+        gap: 1.5rem;
+    }
+    .how-i-create-cards .card .card-text h4 {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .how-i-create {
+        margin-block: 8rem;
+    }
+    .how-i-create-container {
+        gap: 2rem;
+    }
+    .how-i-create-text h1 {
+        font-size: 2rem;
+        width: 100%;
+        text-align: center;
+    }
+    .how-i-create-content {
+        gap: 1rem;
+    }
+    .how-i-create-cards {
+        flex-direction: column;
+        width: 100vw;
+        max-width: 100vw;
+    }
+    .how-i-create-cards .card {
+        width: 100%;
+        padding: 1.5rem 1rem;
+        gap: 2rem;
+    }
+    .how-i-create-cards .card .card-text {
+        gap: 1rem;
+    }
+    .how-i-create-cards .card .card-text h4 {
+        font-size: 1.2rem;
+    }
+    .card-text p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .how-i-create {
+        margin-block: 4rem;
+    }
+
+    .how-i-create-container {
+        gap: 2rem;
+    }
+
+    .how-i-create-text h1 {
+        font-size: 1.5rem;
+        line-height: 1.1;
+    }
+    .how-i-create-cards .card {
+        padding: 1rem;
+        gap: 2rem;
+    }
+    .how-i-create-cards .card .card-text h4 {
+        font-size: 1rem;
+    }
+    .card-text p {
+        font-size: 0.8rem;
+    }
+}
+
+
