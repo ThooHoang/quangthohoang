@@ -11,7 +11,8 @@
 
 .how-i-create-text {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    text-align: center;
     
 }
 
@@ -27,7 +28,7 @@
 .how-i-create-text p {
     color: var(--foreground);
     font-family: var(--font-primary);
-    font-weight: 300;
+    font-weight: 100;
     align-self: flex-end;
 }
 
@@ -41,8 +42,9 @@
 
 .how-i-create h3 {
     color: var(--foreground);
-    font-family: var(--font-secondary);
-    font-weight: 700;
+    font-family: var(--font-primary);
+    font-weight: 100;
+    margin-bottom: 2rem;
     
 }
 
@@ -125,7 +127,7 @@
         margin-block: 8rem;
     }
     .how-i-create-container {
-        gap: 2rem;
+        gap: 4rem;
     }
     .how-i-create-text h1 {
         font-size: 2rem;
