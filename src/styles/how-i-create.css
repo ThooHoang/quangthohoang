@@ -40,7 +40,7 @@
     align-items: center;
 }
 
-.how-i-create h3 {
+.tagline {
     color: var(--foreground);
     font-family: var(--font-primary);
     font-weight: 100;

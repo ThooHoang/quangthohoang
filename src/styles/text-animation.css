@@ -13,7 +13,7 @@
 }
 
 .fade-scroll {
-    font-size: 6rem;
+    font-size: 5rem;
     color: var(--foreground);
     font-family: var(--font-primary);
 }
