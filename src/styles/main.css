@@ -174,14 +174,35 @@ img {
     justify-content: flex-start;
     gap: 3rem;
     margin-left: -1px;
-    transition: .3s ease;
+    transition: .6s ease;
     color: var(--foreground);
+    overflow: hidden;
+    position: relative;
+}
+
+.row::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #FFF3C3;
+    transform: translateX(-100%); 
+    transition: transform .6s ease-in-out;
+    z-index: -1;
+}
+
+.row:hover::before {
+    transform: translateX(0); 
 }
 
 .row .fa-brands {
     font-size: 4rem;
     color:#FFF3C3 ;
 }
+
+
 
 .row h1 {
     font-size: 4rem;
