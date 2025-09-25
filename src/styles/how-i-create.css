@@ -70,13 +70,13 @@
     justify-content: center;
     text-align: center;
     gap: 2rem;
+    transition: .3s ease;
 }
 
 
 .how-i-create-cards .card:hover {
     background-color: #FFF3C3;
     color: #000000;
-    transition: .3s ease;
 }
 
 

@@ -133,3 +133,33 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 });
+
+// Hover text content changing
+
+const rows = document.querySelectorAll('.row');
+
+const hoverText = {
+  'HTML' : 'Clean & Semantic Structure',
+  'CSS' : 'Pixel Perfect Designs from Figma',
+  'JAVASCRIPT' : 'Dynamic Web Applications',
+  'FIGMA' : 'Design Systems & Wireframes'
+}
+
+rows.forEach(row => {
+  const title = row.querySelector('h1');
+  const originalText = title.textContent;
+
+  row.addEventListener('mouseenter', () => {
+    title.textContent = hoverText[originalText] 
+    title.style.fontSize = '1.5rem'
+    title.style.fontWeight = '300'
+    title.style.fontFamily ='var(--font-primary)'
+  })
+
+  row.addEventListener('mouseleave', () => {
+    title.textContent = originalText
+    title.style.fontSize = '4rem'
+     title.style.fontWeight = '700'
+     title.style.fontFamily ='var(--font-secondary)'
+  } )
+})
