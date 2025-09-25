@@ -36,11 +36,11 @@
 
 @media (max-width: 768px) {
     .fade-scroll {
-        font-size: 2.2rem;
+        font-size: 2.8rem;
     }
     .text-animation {
-        margin-block: 100px;
         height: auto;
+        text-align: center;
     }
     .text-animation-container {
         max-width: 100%;
@@ -49,11 +49,11 @@
 
 @media (max-width: 480px) {
     .fade-scroll {
-        font-size: 1.2rem;
+        font-size: 2.2rem;
     }
     .text-animation {
-        margin-block: 40px;
         height: auto;
+        text-align: center;
     }
 }
 
