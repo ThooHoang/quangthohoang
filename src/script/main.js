@@ -163,3 +163,115 @@ rows.forEach(row => {
      title.style.fontFamily ='var(--font-secondary)'
   } )
 })
+
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const greetings = [
+        'Hello!',
+        'Hej!', 
+        'Hola!',
+        'Ahoj!',
+        'Ciao!',
+        'Guten Tag!',
+        'Привет!',
+        'こんにちは',
+        'مرحبا',
+        'Olá'
+    ];
+
+    let currentIndex = 0;
+    const greetingElement = document.getElementById('greetingText');
+    
+    if (greetingElement) {
+        greetingElement.textContent = greetings[currentIndex];
+        function changeGreeting() {
+            greetingElement.classList.add('fade-out');
+            
+            setTimeout(() => {
+                currentIndex = (currentIndex + 1) % greetings.length;
+                greetingElement.textContent = greetings[currentIndex];
+                greetingElement.classList.remove('fade-out');
+            }, 250);
+        }
+
+        const greetingInterval = setInterval(changeGreeting, 1000);
+
+        setTimeout(() => {
+            const loadingContainer = document.querySelector('.loading-container');
+            if (loadingContainer) {
+                loadingContainer.style.transition = 'opacity 0.5s ease-out';
+                loadingContainer.style.opacity = '0';
+                
+                setTimeout(() => {
+                    loadingContainer.style.display = 'none';
+                    clearInterval(greetingInterval); // Zastaví animáciu
+                }, 500);
+            }
+        }, 6800);
+    }
+});
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+
+  (function enableAnimateOnScroll() {
+    if (typeof window === 'undefined') return;
+
+    const elements = document.querySelectorAll('.animate-on-scroll');
+    console.debug('[animate] found elements:', elements.length);
+    if (!elements || elements.length === 0) return;
+
+    const animationClassPrefix = 'animate__'; 
+    const animatedClass = 'animate__animated';
+
+
+    const observerOptions = {
+      root: null,
+      rootMargin: '0px 0px -10% 0px',
+      threshold: 0 
+    };
+
+    const onIntersect = (entries, obs) => {
+      entries.forEach(entry => {
+        const el = entry.target;
+
+        console.debug('[animate] entry', el.tagName, 'isIntersecting=', entry.isIntersecting, 'intersectionRatio=', entry.intersectionRatio);
+
+        if (entry.isIntersecting) {
+          const anim = el.dataset.animate || (animationClassPrefix + 'fadeInUp');
+
+ 
+          el.classList.add(animatedClass, anim);
+
+          el.style.opacity = '';
+
+
+          obs.unobserve(el);
+        }
+      });
+    };
+
+
+    if (!('IntersectionObserver' in window)) {
+      console.warn('[animate] IntersectionObserver not supported — running fallback');
+      elements.forEach(el => {
+        const anim = el.dataset.animate || (animationClassPrefix + 'fadeInUp');
+        setTimeout(() => {
+          el.classList.add(animatedClass, anim);
+          el.style.opacity = '';
+        }, 120);
+      });
+      return;
+    }
+
+    const io = new IntersectionObserver(onIntersect, observerOptions);
+
+    elements.forEach(el => {
+      el.style.opacity = '0';
+      io.observe(el);
+    });
+  })();
+});

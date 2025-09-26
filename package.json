@@ -10,5 +10,8 @@
   },
   "devDependencies": {
     "vite": "^7.1.6"
+  },
+  "dependencies": {
+    "animate.css": "^4.1.1"
   }
 }

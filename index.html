@@ -10,9 +10,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Potta+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <title>Hoang | Frontend Developer </title>
   </head>
   <body>
+    
+     <div class="loading-container">
+        <div class="greeting-text" id="greetingText">Hello</div>
+    </div>
+
     <header class="container">
       <!-- Navbar -->
 
@@ -112,7 +118,7 @@
           </div>
         </div>
       </section> -->
-      <section class="how-i-create">
+      <section class="how-i-create animate-on-scroll" data-animate="animate__slideInRight">
         <div class="how-i-create-container">
           <div class="how-i-create-text" id="how-i-create">
             <h1>
@@ -172,9 +178,9 @@
           </div>
         </div>
       </section>
-      <section class="my-tech-stack">
+      <section class="my-tech-stack animate-on-scroll" data-animate="animate__slideInLeft">
         <div class="my-tech-stack-container">
-          <h1 class="title">MY <span style="color: #FFEDA4;">TECH</span> STACK</h1>
+          <h1 class="title">MY<span style="color: #FFEDA4;">TECH</span> STACK</h1>
           <h3 class="tagline">TECHNOLOGIES I WORK WITH</h3>
           <div class="rows-container">
             <div class="row">
@@ -196,10 +202,10 @@
           </div>
         </div>
       </section>
-      <section class="selected-works">
+      <section class="selected-works animate-on-scroll" data-animate="animate__slideInRight">
         <div class="selected-works-container" id="selected-works">
-          <h1>SELECTED <span style="color:#FFEDA4;">WORKS</span>/</h1>
-          <div class="project-container">
+          <h1 class="animate-on-scroll" data-animate="animate__backInRight">SELECTED <span style="color:#FFEDA4;">WORKS</span>/</h1>
+          <div class="project-container animate-on-scroll" data-animate="animate__slideInRight">
             <div class="wrapper">
               <div class="project-image tracknest"></div>
               <div class="project-description">
@@ -218,7 +224,7 @@
             </div>
           </div>
 
-          <div class="project-container">
+          <div class="project-container animate-on-scroll" data-animate="animate__slideInLeft">
             <div class="wrapper">
               <div class="project-image portfolio"></div>
               <div class="project-description">
@@ -228,7 +234,6 @@
                 </div>
                 <div class="project-stack">
                   <a href="https://github.com/ThooHoang/quangthohoang" target="_blank">GITHUB</a>
-                  <a href="#">LIVE DEMO</a>
                 </div>
               </div>
             </div>
@@ -237,7 +242,7 @@
             </div>
           </div>
 
-          <div class="project-container">
+          <div class="project-container animate-on-scroll" data-animate="animate__slideInRight">
             <div class="wrapper">
               <div class="project-image basketball"></div>
               <div class="project-description">
@@ -256,7 +261,7 @@
             </div>
           </div>
 
-          <div class="project-container">
+          <div class="project-container animate-on-scroll" data-animate="animate__slideInLeft">
             <div class="wrapper">
               <div class="project-image shopify"></div>
               <div class="project-description">
@@ -274,7 +279,7 @@
             </div>
           </div>
 
-          <div class="project-container">
+          <div class="project-container animate-on-scroll" data-animate="animate__slideInRight">
             <div class="wrapper">
               <div class="project-image dishdelights"></div>
               <div class="project-description">
