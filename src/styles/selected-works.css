@@ -111,15 +111,24 @@
     gap: 1.25rem;
 }
 
-.project-stack span {
-    padding: 8px 16px;
-    border: .85px solid #FFFFFF;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 20px;
+.project-stack a {
+    padding: 16px 20px;
+    border-radius: 30px;
+    color: var(--black) ;
+    background-color: #FFF3C3;
     font-family: var(--font-primary);
+    font-weight: 500;
+    border: 2px solid #FFF3C3;
+    transition: .3s ease;
 }
+
+.project-stack a:hover {
+    background-color: transparent;
+    border: 2px solid #FFF3C3;
+    color: var(--foreground);
+
+}
+
 
 
 
