@@ -102,7 +102,7 @@ img {
 .marquee h3 {
     font-family: var(--font-secondary);
     display: inline-block;
-    font-weight: bold;
+    font-weight: 100;
     flex-shrink: 0;
     font-size: 2rem;
     color: var(--foreground);
