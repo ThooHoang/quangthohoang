@@ -1,0 +1,298 @@
+.selected-works-container {
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+    margin-block: 15rem;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.selected-works-container .project-container:nth-child(2n+1) {
+    flex-direction: row-reverse; 
+}
+
+.selected-works-container h1 {
+    color: var(--foreground);
+    font-size: 5rem;
+    font-weight: 900;
+    font-family: var(--font-secondary);
+    white-space: nowrap;
+    
+}
+
+.project-container {
+   display: flex;
+   gap: 6rem;
+   width: 100%;
+   justify-content: space-between;
+}
+
+.wrapper {
+    width: 70%;
+    position: relative;
+    border: 1px solid #333;
+    padding: 2rem;
+    border-radius: 20px;    
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
+}
+
+.wrapper:hover {
+     transform: translateY(-5px);
+     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    border-color: #FFF3C3;
+
+}
+
+.project-image {
+    width: 100%;
+    min-height: 500px;
+    background-image: url(../assets/project-placeholder.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    position: relative;
+    transition: .3s ease;
+
+}
+
+.project-image::before {
+    content: '';
+    height: 100%;
+    width: 100%;
+    z-index: 99;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: .3s ease;
+    border-radius: 20px;
+    border: 3px solid transparent
+
+}
+
+.project-image:hover::before {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+
+.project-description {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+    justify-content: space-between;
+    margin-top: 2.5rem;
+    color: var(--foreground);
+    align-items: center;
+}
+
+.project-name {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.project-name h4 {
+    font-size: 1.5rem;
+    font-family: var(--font-secondary);
+    font-weight: 600;
+}
+
+.project-name p {
+    font-family: var(--font-primary);
+    font-weight: 200;
+    font-style: medium;
+}
+
+.project-stack {
+    display: flex;
+    gap: 1.25rem;
+}
+
+.project-stack span {
+    padding: 8px 16px;
+    border: .85px solid #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    font-family: var(--font-primary);
+}
+
+
+
+.project-number h1 {
+    font-size: 25rem;
+    font-family: var(--font-secondary);
+    background: linear-gradient(#FFEDA4, #998E62);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    opacity: .05;
+}
+
+/* Responsive: stack project cards and hide big numbers on smaller screens */
+
+/* Medium screens: slightly reduce huge typography and gaps */
+@media (max-width: 1200px) {
+  .selected-works-container {
+    gap: 4rem;
+    margin-block: 10rem;
+  }
+
+  .selected-works-container h1 {
+    font-size: 4rem; /* down from 5rem */
+    white-space: normal;
+    text-align: center;
+  }
+
+  .project-container {
+    gap: 3rem;
+  }
+
+    .project-description {
+    display: flex;
+    flex-direction: column;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+    text-align: center;
+    padding: 2rem;
+}
+
+  .project-number h1 {
+    font-size: 18rem; /* reduce very large number */
+  }
+
+  .wrapper {
+    padding: 1.75rem;
+  }
+
+  .project-image {
+    min-height: 420px; /* slightly smaller */
+  }
+}
+
+/* Tablet and small desktop: stack layout for readability */
+@media (max-width: 992px) {
+  .selected-works-container {
+    margin-block: 8rem;
+  }
+
+  /* force normal flow for alternate containers */
+  .selected-works-container .project-container:nth-child(2n+1) {
+    flex-direction: row; /* cancel row-reverse for medium screens */
+  }
+
+  .project-container {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+  }
+
+  .project-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+    text-align: center;
+    padding: 2rem;
+}
+
+  .project-image {
+    min-height: 360px;
+  }
+
+  .project-number  {
+    display: none;
+  }
+}
+
+/* Mobile: stack cards under each other and hide project number */
+@media (max-width: 768px) {
+  .selected-works-container {
+    gap: 2.5rem;
+    margin-block: 4.5rem;
+    padding-inline: 1rem;
+  }
+
+  .project-container {
+    flex-direction: column;
+    gap: 1.25rem;
+    align-items: stretch;
+    justify-content: flex-start;
+    width: 100%;
+  }
+
+  /* make wrapper full width (card area) */
+  .wrapper {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 12px;
+  }
+
+  .project-image {
+    min-height: 220px;
+    border-radius: 12px;
+  }
+
+  /* hide the oversized decorative project number on small screens */
+  .project-number {
+    display: none;
+  }
+
+  /* keep description and stack full width and a readable size */
+  .project-description {
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .project-name h4 {
+    font-size: 1.15rem;
+  }
+
+  .project-stack span {
+    padding: 6px 12px;
+    font-size: 0.85rem;
+  }
+}
+
+/* Extra small phones */
+@media (max-width: 480px) {
+  .selected-works-container {
+    margin-block: 3rem;
+  }
+
+  .selected-works-container h1 {
+    font-size: 2.2rem;
+  }
+
+  .project-image {
+    min-height: 160px;
+  }
+
+  .project-name h4 {
+    font-size: 1rem;
+  }
+
+  .project-stack span {
+    padding: 6px 10px;
+    font-size: 0.8rem;
+  }
+
+  .wrapper {
+    padding: 0.75rem;
+  }
+}
+
+
+
+
