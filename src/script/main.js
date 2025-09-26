@@ -209,7 +209,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     clearInterval(greetingInterval); // Zastaví animáciu
                 }, 500);
             }
-        }, 6800);
+        }, 3800);
     }
 });
 
