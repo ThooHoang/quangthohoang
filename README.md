@@ -33,6 +33,6 @@ This portfolio reflects who I am – how I build, how I think, and the style I p
 
 If you like my work, feel free to reach out:  
 - ✉️ Email: *[adamhoang23@gmail.com]*  
-- 💼 LinkedIn: *[[add your LinkedIn profile here](https://www.linkedin.com/in/quang-tho-hoang-42801b322/)]*  
+- 💼 LinkedIn: *[https://www.linkedin.com/in/quang-tho-hoang-42801b322/]*  
 
 ---
