@@ -1,63 +1,38 @@
-
-# QuangThoHoang
+# 🌐 My Portfolio
 
 ## 📄 Overview
 
-QuangThoHoang is a personal portfolio website developed using HTML, CSS, and JavaScript. It showcases the work and projects of Quang Tho Hoang.
+This is my first personal **portfolio**, built with **HTML, CSS, and JavaScript**.  
+It’s the project I’ve focused on the most so far – I really dove into it, enjoyed working on it, and learned a lot along the way.  
 
-## 🚀 Features
+Even though I’m still at the beginning of my journey, this portfolio represents my motivation and the way I create.  
 
-- Responsive design for optimal viewing on various devices.
-- Smooth animations and transitions for an engaging user experience.
-- Sections highlighting personal information, skills, and contact details.
+## 🚀 Features & Design
+
+- Minimalistic yet modern design  
+- Color palette: **black & white** with subtle **yellow accents**  
+- Bold typography for a clean, professional look  
+- Fully responsive design  
 
 ## 🛠️ Technologies Used
 
-- HTML5
-- CSS3
-- JavaScript
+- **HTML5** – entire structure written by me  
+- **CSS3** – complete styling done by hand  
+- **JavaScript** – I used some AI assistance, but I made sure to understand and learn from the code  
 
-## 📂 Project Structure
+JavaScript is still a big chapter I’m working on, but I’m excited to improve and spend the coming months mastering it.  
 
-The repository contains the following main directories and files:
+## 🙌 Motivation
 
-- `index.html`: The main homepage of the portfolio.
-- `contact.html`: A page with contact information.
-- `public/`: Directory containing public assets like images and fonts.
-- `src/`: Source files for scripts and styles.
-- `package.json`: Node.js package configuration file.
-- `.gitignore`: Specifies files and directories to be ignored by Git.
+I’m proud that I was able to program this portfolio.  
+It’s my **first step into the world of web development** and the project I’ll be using to apply for **internships** and **job opportunities**.  
 
-## 📥 Installation
-
-To run the project locally:
-
-1. Clone the repository:
-
-   ```bash
-   git clone https://github.com/ThooHoang/quangthohoang.git
-   ```
-
-2. Navigate into the project directory:
-
-   ```bash
-   cd quangthohoang
-   ```
-
-3. Install dependencies:
-
-   ```bash
-   npm install
-   ```
-
-4. Start the development server:
-
-   ```bash
-   npm start
-   ```
-
-This will launch the portfolio in your default web browser.
+This portfolio reflects who I am – how I build, how I think, and the style I prefer.  
 
 ## 📞 Contact
 
-For inquiries or feedback, please reach out via the contact page or email.
+If you like my work, feel free to reach out:  
+- ✉️ Email: *[adamhoang23@gmail.com]*  
+- 💼 LinkedIn: *[[add your LinkedIn profile here](https://www.linkedin.com/in/quang-tho-hoang-42801b322/)]*  
+
+---
