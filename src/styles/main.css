@@ -285,21 +285,16 @@ img {
 }
 .greeting-text {
     font-size: 3rem;
-    font-weight: 300;
+    font-weight: 600;
     margin-bottom: 2rem;
     opacity: 0;
+    font-family: var(--font-secondary);
     transform: translateY(20px);
     animation: fadeInUp 0.8s ease-out forwards;
 }
 
-.loading-dots {
-    font-size: 2rem;
-    color: rgba(255, 255, 255, 0.7);
-}
 
-.dot {
-    animation: pulse 1.4s infinite ease-in-out;
-}
+
 
 .dot:nth-child(1) { animation-delay: -0.32s; }
 .dot:nth-child(2) { animation-delay: -0.16s; }
